@@ -1,0 +1,81 @@
+{
+  "projectType": "saas",
+  "projectName": "ShopFront",
+  "projectDescription": "A mobile e-commerce app built with React Native and Expo that lets shoppers browse products, manage a cart, check out with PayPal, and track their orders.",
+  "theme": "almond",
+  "primaryColor": "#382c84",
+  "lightColor": "#6f63af",
+  "darkColor": "#1A1A1A",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guide",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Shopping",
+            "pages": [
+              "shopping/browse-products",
+              "shopping/product-details",
+              "shopping/cart"
+            ]
+          },
+          {
+            "group": "Checkout",
+            "pages": [
+              "checkout/shipping",
+              "checkout/payment",
+              "checkout/place-order"
+            ]
+          },
+          {
+            "group": "Account",
+            "pages": [
+              "account/register",
+              "account/login",
+              "account/profile",
+              "account/orders"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "help/faq",
+              "help/troubleshooting"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Product browsing with keyword search and pagination",
+    "Shopping cart with quantity management and real-time price calculation",
+    "Secure checkout flow: shipping address, payment method selection, order review",
+    "PayPal payment integration",
+    "Order history and order status tracking",
+    "User account registration and login",
+    "Product ratings and customer reviews",
+    "Admin panel for managing products, orders, and users"
+  ],
+  "publicApiSurface": [
+    "GET /api/products — list products with optional keyword and pageNumber filters",
+    "GET /api/products/:id — get product details",
+    "POST /api/products/:id/reviews — submit a product review",
+    "POST /api/users — register a new user",
+    "POST /api/users/login — authenticate and receive a token",
+    "GET /api/orders/mine — get the current user's orders",
+    "GET /api/orders/:id — get order details",
+    "POST /api/orders — create a new order",
+    "PUT /api/orders/:id/pay — mark order as paid via PayPal",
+    "POST /api/paypal/create-order — create a PayPal payment order",
+    "POST /api/paypal/capture-order — capture a completed PayPal payment",
+    "GET /api/config/paypal — retrieve PayPal client configuration"
+  ]
+}

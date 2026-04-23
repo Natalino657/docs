@@ -1,0 +1,68 @@
+---
+title: "Review and Place Your ShopFront Order"
+description: "Step three of checkout: review your items, shipping address, and total cost, then confirm payment through PayPal to place your ShopFront order."
+sidebarTitle: "Place Order"
+---
+
+The order review screen is the final step before your order is submitted. ShopFront shows you a complete summary — your items, shipping address, payment method, and price breakdown — so you can verify everything is correct before committing. Tapping **Place Order** initiates the PayPal payment flow and, once payment is confirmed, creates your order.
+
+<Warning>
+  If the PayPal payment window closes unexpectedly before you complete payment, your order has **not** been placed. Return to the order review screen and tap **Place Order** again to restart the PayPal flow. Do not close the app while the PayPal window is open, as this may interrupt payment processing.
+</Warning>
+
+<Steps>
+  <Step title="Review your shipping details">
+    At the top of the screen, ShopFront displays the shipping address you entered in step one: street address, city, postal code, and country. If anything looks incorrect, go back to the Shipping screen to make changes before proceeding.
+  </Step>
+
+  <Step title="Confirm your payment method">
+    Below the shipping details, ShopFront shows the payment method you selected — PayPal. If you need to change it, go back to the Payment screen.
+  </Step>
+
+  <Step title="Check your order items">
+    The **Your Order** section lists every item in your cart, with its quantity and the line total for each product. Scroll through the list to confirm all items and quantities are correct.
+  </Step>
+
+  <Step title="Review the price breakdown">
+    The order summary panel shows a full cost breakdown before you commit:
+
+    | Line | Description |
+    |------|-------------|
+    | **Items** | Combined price of all products in your cart |
+    | **Shipping** | Delivery cost based on your order |
+    | **Tax** | Applicable tax calculated on your order |
+    | **Total** | The final amount that will be charged |
+  </Step>
+
+  <Step title="Tap Place Order">
+    When you are satisfied with the review, tap **Place Order**. ShopFront submits your order details to the server and then opens the PayPal payment screen. The **Place Order** button is disabled if your cart is empty.
+
+    <Tip>
+      A loading indicator appears on the button while ShopFront is creating your order. Wait for the PayPal screen to open before doing anything else.
+    </Tip>
+  </Step>
+
+  <Step title="Complete payment in PayPal">
+    A PayPal screen slides up over the app. Log in to your PayPal account (or enter your card details) and follow the on-screen prompts to approve the payment. PayPal supports payment via your PayPal balance, a linked bank account, or a credit or debit card.
+
+    Once you approve the payment in PayPal, the screen closes automatically and ShopFront processes the transaction.
+  </Step>
+
+  <Step title="View your order confirmation">
+    After a successful payment, ShopFront displays your order confirmation screen. You will see:
+
+    - Your unique **order ID**
+    - The list of items in your order with quantities and prices
+    - Your shipping address and chosen payment method
+    - A payment status confirming the date and time payment was received
+    - A status message confirming your order is being prepared for delivery
+
+    <Info>
+      ShopFront does not display a specific estimated delivery date on the confirmation screen. Delivery timing depends on your location and the shipping option applied to your order.
+    </Info>
+  </Step>
+</Steps>
+
+## If payment fails
+
+If PayPal reports a payment error or the payment is not captured successfully, ShopFront displays an error notification at the top of the screen. Your order is not placed in this case. You can tap **Place Order** again to retry. If the problem persists, check that your PayPal account has a valid funding source and that your internet connection is stable before trying again.

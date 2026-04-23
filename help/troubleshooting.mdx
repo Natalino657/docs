@@ -1,0 +1,118 @@
+---
+title: "Troubleshoot Common ShopFront Issues"
+description: "Fix common problems in ShopFront including login failures, PayPal payment errors, missing orders, and cart issues with step-by-step solutions."
+sidebarTitle: "Troubleshooting"
+---
+
+If something is not working as expected in ShopFront, the steps below cover the most common issues and how to resolve them. Work through the relevant section and try each step before moving to the next.
+
+<AccordionGroup>
+  <Accordion title="I can't log in to my account">
+    <Steps>
+      <Step title="Check your credentials">
+        Make sure you are entering the exact email address and password you registered with. Email addresses are case-insensitive, but passwords are not — check that Caps Lock is off.
+      </Step>
+      <Step title="Look for typos">
+        Tap the eye icon on the password field to reveal what you have typed and confirm there are no accidental extra characters.
+      </Step>
+      <Step title="Re-register if you are a new user">
+        If you have never created an account, tap **Register** on the sign-in screen to create one. Attempting to sign in without a registered account will always fail.
+      </Step>
+      <Step title="Check your internet connection">
+        Login requires a network request to complete. Make sure you have an active internet connection and try again.
+      </Step>
+    </Steps>
+  </Accordion>
+
+  <Accordion title="My PayPal payment keeps failing">
+    <Steps>
+      <Step title="Check your PayPal balance and payment methods">
+        Sign in to your PayPal account and confirm that you have sufficient funds or a valid credit/debit card linked.
+      </Step>
+      <Step title="Verify your internet connection">
+        A dropped connection mid-payment can cause the transaction to fail. Switch to a more stable network and try again.
+      </Step>
+      <Step title="Retry the payment">
+        Return to your cart, tap **Proceed to Checkout**, and go through the PayPal flow again. PayPal may have declined the first attempt for security reasons; a second attempt often succeeds.
+      </Step>
+      <Step title="Check for PayPal account restrictions">
+        Log in to PayPal directly and look for any alerts, limitations, or identity verification steps that may be blocking payments.
+      </Step>
+    </Steps>
+  </Accordion>
+
+  <Accordion title="Products are not loading">
+    <Steps>
+      <Step title="Check your internet connection">
+        Product data is fetched from the server each time you open the app. Confirm you have an active connection.
+      </Step>
+      <Step title="Pull to refresh">
+        On the product listing screen, pull down from the top of the list to trigger a fresh data load.
+      </Step>
+      <Step title="Try again later">
+        If the server is temporarily unavailable, waiting a few minutes and reopening the app usually resolves the issue.
+      </Step>
+    </Steps>
+  </Accordion>
+
+  <Accordion title="My order is not showing in my order history">
+    Order history only shows orders that were placed while you were signed in to your account. If you were not logged in when you completed checkout, that order will not appear in the **Orders** tab.
+
+    <Warning>
+      Guest orders are not linked to any account and cannot be retrieved after the session ends. Always sign in before placing an order so your history is saved.
+    </Warning>
+
+    If you were signed in and the order is still missing, try closing and reopening the app to refresh the order list.
+  </Accordion>
+
+  <Accordion title="My cart items have disappeared">
+    ShopFront stores cart data locally on your device. Cart contents are removed if you:
+
+    - Clear the app's storage or cache through your device settings.
+    - Uninstall and reinstall the app.
+    - Reset your device.
+
+    <Tip>
+      Complete checkout in the same session whenever possible. Items in your cart are not reserved and may sell out while you wait.
+    </Tip>
+  </Accordion>
+
+  <Accordion title="I can't submit a product review">
+    The review form is only available to signed-in users. If you do not see the form on the product page, you are currently browsing as a guest.
+
+    <Steps>
+      <Step title="Sign in to your account">
+        Tap **Sign In** from the product page or navigate to the Profile tab and log in.
+      </Step>
+      <Step title="Return to the product page">
+        Navigate back to the product you want to review and scroll to the **Reviews** section. The form should now be visible.
+      </Step>
+    </Steps>
+  </Accordion>
+
+  <Accordion title="The app is slow or keeps crashing">
+    <Steps>
+      <Step title="Close and reopen the app">
+        Fully close ShopFront from your device's app switcher and relaunch it. This clears any temporary state that may be causing the issue.
+      </Step>
+      <Step title="Check your internet connection">
+        A slow or intermittent connection can cause the app to appear frozen while waiting for data. Switch to a faster or more stable network.
+      </Step>
+      <Step title="Free up device resources">
+        Close other apps running in the background to give ShopFront more memory to work with.
+      </Step>
+    </Steps>
+  </Accordion>
+
+  <Accordion title="The shipping address on my order is wrong">
+    Orders cannot be modified after they have been placed and payment has been captured. If you notice an incorrect address immediately after ordering, contact support straight away — the earlier you reach out, the better the chance of intervention before dispatch.
+
+    <Warning>
+      ShopFront cannot guarantee that address changes can be made once an order is confirmed. Double-check your shipping details on the review screen before completing checkout.
+    </Warning>
+  </Accordion>
+</AccordionGroup>
+
+<Note>
+  If none of the steps above resolve your issue, please open a report on the [ShopFront GitHub issue tracker](https://github.com/Natalino657/frontend_e_commerce/issues). Include a description of the problem, the steps you already tried, and any error messages you saw so the team can investigate as quickly as possible.
+</Note>

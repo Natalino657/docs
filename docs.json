@@ -1,0 +1,64 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "ShopFront",
+  "theme": "almond",
+  "colors": {
+    "primary": "#382c84",
+    "light": "#6f63af",
+    "dark": "#1A1A1A"
+  },
+  "navbar": {
+    "primary": {
+      "type": "github",
+      "href": "https://github.com/Natalino657/frontend_e_commerce"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guide",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Shopping",
+            "pages": [
+              "shopping/browse-products",
+              "shopping/product-details",
+              "shopping/cart"
+            ]
+          },
+          {
+            "group": "Checkout",
+            "pages": [
+              "checkout/shipping",
+              "checkout/payment",
+              "checkout/place-order"
+            ]
+          },
+          {
+            "group": "Account",
+            "pages": [
+              "account/register",
+              "account/login",
+              "account/profile",
+              "account/orders"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "help/faq",
+              "help/troubleshooting"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

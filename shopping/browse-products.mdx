@@ -1,0 +1,49 @@
+---
+title: "Browse and Search Products on ShopFront"
+description: "Explore ShopFront's full product catalog using keyword search and pagination. Filter results and discover products from the home screen."
+sidebarTitle: "Browse Products"
+---
+
+The home screen is your starting point for discovering everything available in ShopFront. When you open the app, you'll see the full product catalog displayed as a scrollable two-column grid, each card giving you a quick snapshot of the item before you tap into it.
+
+## Searching for products
+
+Use the search bar in the header at the top of the home screen to find specific products by keyword. As you type and submit your search, the grid updates to show only matching results. To clear a search and return to the full catalog, delete your search text and search again with an empty term.
+
+## Navigating pages
+
+When the catalog spans multiple pages, a row of numbered page buttons appears at the bottom of the grid, below the last product row. The current page is highlighted. Tap any page number to jump directly to that page. Pagination controls only appear when there is more than one page of results — searches with a small number of matches will show everything on a single page without any controls.
+
+## What each product card shows
+
+Every card in the grid displays the following at a glance:
+
+<CardGroup cols={2}>
+  <Card title="Product image" icon="image">
+    A preview photo of the item, scaled to fit the card.
+  </Card>
+  <Card title="Product name" icon="tag">
+    The item name, trimmed to a single line if it is long.
+  </Card>
+  <Card title="Price" icon="euro-sign">
+    The item's price in euros, displayed in the lower portion of the card.
+  </Card>
+  <Card title="Stock status" icon="circle-check">
+    A small badge showing **In Stock** or **Sold Out** next to the price.
+  </Card>
+  <Card title="Star rating" icon="star">
+    A row of up to five stars reflecting the average customer rating, followed by the total number of reviews.
+  </Card>
+</CardGroup>
+
+## Tapping a product
+
+Tap anywhere on a product card to open the full product detail screen, where you can read the description, check stock, browse reviews, and add the item to your cart.
+
+## When no results are found
+
+If your search returns no matches — or if the catalog is temporarily unavailable — an informational message appears in place of the product grid. Try adjusting your search terms or clearing the search to browse the full catalog again.
+
+<Info>
+  The product list refreshes automatically whenever you change your search keyword or navigate to a different page, so you always see up-to-date availability and pricing.
+</Info>
